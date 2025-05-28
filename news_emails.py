@@ -12,7 +12,7 @@ APP_PASSWORD = os.environ['EMAIL_PASSWORD']
 
 def get_tech_news():
     response = openai.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a tech news summarizer."},
             {"role": "user", "content": "Give me a list of the top 5 latest tech news headlines today with clickable URLs. Format in HTML list."}
